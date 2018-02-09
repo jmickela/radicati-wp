@@ -13,6 +13,10 @@
                 {% set fa_class = "fa-yelp" %}
             {% elseif "mailto:" in item.get_link %}
                 {% set fa_class = "fa-envelope" %}
+            {% elseif "linkedin" in item.get_link %}
+                {% set fa_class = "fa-linkedin" %}
+            {% elseif "feed" in item.get_link %}
+                {% set fa_class = "fa-rss" %}
             {% else %}
                 {% set fa_class = null %}
             {% endif %}
